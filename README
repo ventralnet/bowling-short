@@ -1,0 +1,26 @@
+Author: Matthew Kirkley
+e-mail: matt.kirkley@gmail.com
+
+This is an implementation of scoring a 10 pin game of bowling given a valid frame set of game play.
+
+Input:
+   Input should be a string of characters.  Character values can be 'X' '/' or a digit 0 - 9 representing
+   a Strike, Spare and open roll respectively.  Each frame in the input string is separated by the '-' character.
+   Each frame of the string can have up to 2 character but at minimum 1 with an exception being the 10th frame.
+   The 10th frame must include 3 rolls. Example input strings are as follows
+   
+   X-X-X-X-X-X-X-X-X-000      //A bowling strkes all frames 1-9, but on the 10th screws up and gutter balls everything
+   X-X-X-X-X-X-X-X-X-2/0      //A bowler gutters the last ball coming from a spare
+   00-00-00-00-00-00-00-00-00-000   //A bowler bowls all gutter balls
+   
+Output:
+  The output will be an Integer between the values of 0 to 300 inclusive.  Output will be directed to standard out.
+  
+Example usage:
+C:\workspaces\SANDBOX\BOWLING-TINY>groovy scorer.groovy X-X-X-X-X-X-X-X-X-XXX
+300
+C:\workspaces\SANDBOX\BOWLING-TINY>
+
+C:\workspaces\SANDBOX\BOWLING-TINY>groovy scorer.groovy 00-00-00-00-00-00-00-00-00-000
+0
+C:\workspaces\SANDBOX\BOWLING-TINY>
