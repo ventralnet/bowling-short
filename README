@@ -1,7 +1,9 @@
 Author: Matthew Kirkley
 e-mail: matt.kirkley@gmail.com
 
-This is an implementation of scoring a 10 pin game of bowling given a valid frame set of game play.
+This is an implementation of scoring a 10 pin game of bowling given a valid frame set of game play. 
+
+This version I coded with the purpose of implementing the solution in as FEW lines as possible.
 
 Input:
    Input should be a string of characters.  Character values can be 'X' '/' or a digit 0 - 9 representing
